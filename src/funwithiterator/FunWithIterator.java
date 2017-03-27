@@ -22,8 +22,8 @@ public class FunWithIterator {
 
         RobotArmy army = new RobotArmy();
 
-        for (Iterator iter = army.getIterator(); iter.hasNext();) {
-            Robot r = (Robot) iter.next();
+        for (Iterator<Robot> iter = army.getIterator(); iter.hasNext();) {
+            Robot r = iter.next();
             r.talk("Hello World!", 1);
         }
 
